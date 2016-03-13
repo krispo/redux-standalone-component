@@ -11,6 +11,12 @@
     "boilerplate",
     "standalone"
   ],
+  "files": [
+    "dist",
+    "lib",
+    "src",
+    "index.js"
+  ],
   "scripts": {
     "prebuild": "rm -rf dist lib",
     "build": "webpack && babel src --out-dir lib --presets react,es2015",
