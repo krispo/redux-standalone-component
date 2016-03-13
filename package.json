@@ -1,6 +1,6 @@
 {
   "name": "redux-standalone-component",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "simple standalone component boilerplate for react/redux",
   "main": "lib/index.js",
   "jsnext:main": "index",
@@ -13,7 +13,7 @@
   ],
   "scripts": {
     "prebuild": "rm -rf dist lib",
-    "build": "webpack && babel src --out-dir lib --presets react",
+    "build": "webpack && babel src --out-dir lib --presets react,es2015",
     "prepublish": "npm run build"
   },
   "repository": {
