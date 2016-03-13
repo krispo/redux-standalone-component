@@ -1,7 +1,7 @@
 var webpack = require('webpack');
 
 module.exports = {
-  entry: './index.js',
+  entry: './src',
   output: {
     filename: 'dist/demoComponent.min.js',
     libraryTarget: 'umd',
@@ -15,7 +15,8 @@ module.exports = {
         query: {
           presets: ['es2015', 'react']
         },
-        exclude: /node_modules/ }
+        exclude: /node_modules/
+      }
     ]
   },
   plugins: [
