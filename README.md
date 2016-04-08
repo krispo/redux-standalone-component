@@ -51,7 +51,6 @@ import { createStore, combineReducers } from 'redux'
 import { Provider } from 'react-redux'
 import App from './containers/App'
 import { demoReducer } from 'redux-standalone-component'
-import {data} from './data'
 
 const initialState = {
   demoComponentData: [
