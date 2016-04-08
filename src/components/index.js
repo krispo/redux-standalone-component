@@ -7,14 +7,21 @@ class DemoComponent extends Component {
     super(props)
   }
   render(){
-    return <div>Hello World!</div>
+    const { data, x, y } = this.props
+    const list = data.map(d => {
+      const sum = x(d) + y(d)
+      return <li>{sum}</li>
+    })
+    return <ul>{list}</ul>
   }
 }
 
 function mapStateToProps(state, props) {
-  return typeof props.stateKey === 'undefined'
-    ? state
-    : state[props.stateKey];
+  // required props
+  //   data - array of objects, eg: [{prop1: 1, prop2: 2}, {prop1: 3, prop2: 4}, ...]
+  //   x - query function of the first data prop, eg: x = d => d.prop1
+  //   y - query function of the second data prop, eg: y = d => d.prop2
+  return props.mapStateToProps(state, props);
 }
 
 export default connect(mapStateToProps, actions)(DemoComponent)

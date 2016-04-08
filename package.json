@@ -1,6 +1,6 @@
 {
   "name": "redux-standalone-component",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "simple standalone component boilerplate for react/redux",
   "main": "./lib/index.js",
   "jsnext:main": "./src/index.js",
