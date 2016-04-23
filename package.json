@@ -25,7 +25,7 @@
     "type": "git",
     "url": "https://github.com/krispo/redux-standalone-component.git"
   },
-  "author": "Tin Skipor",
+  "author": "Konstantin Skipor",
   "license": "MIT",
   "dependencies": {
     "react": "^0.14",
